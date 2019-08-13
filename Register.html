@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>My Web Page</title>
+</head>
+<body align= "center">
+<p><form name = "myform" method="post" action="http://localhost:1234/Register"></p>
+<h1>Registration Page</h1>
+<p>First Name: <input type = "text" required placeholder="First name" name="fname"/></p>
+<p> Name: <input type = "text" placeholder="Last name" name="lname"/></p>
+<p>Gender: <select id ="gender" name="gender">
+    <option value="male" selected label="Male">Male</option>
+    <option value="female" label="Female">Female</option>
+</select></p>
+<p>Password: <input type = "password" placeholder="Min 6 characters" name="password" pattern=".{6,}" title="Six or more characters"/></p>
+<p>Address: <input type = "textarea" placeholder="Enter your current address" name="address"/></p>
+<p>City: <input type = "text" placeholder="Enter your city" name="city"/></p>
+<p>Mobile: <input type = "tel" placeholder="Enter your mobile no." name="mobile" pattern="^\d{10}$" title="Mobile number less than 10 digits"/></p>
+<p>Email: <input type = "email" required placeholder="userid@domain.com" name="email"/></p>
+<p><input type = "submit" id="submit" value="Submit"/>
+<input type="reset" id="reset" value="Reset"/></p>
+</form>
+</body>
+</html>
